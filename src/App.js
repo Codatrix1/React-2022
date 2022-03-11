@@ -8,7 +8,7 @@ const App = function () {
     <React.Fragment>
       <Header />
       <div className="container">
-        <h1>My Application</h1>
+        <h1>My App</h1>
       </div>
     </React.Fragment>
   );
