@@ -26,8 +26,8 @@ Header.defaultProps = {
 // Using prop-types
 Header.propTypes = {
   text: PropTypes.string.isRequired,
-  bgColor: PropTypes.string.isRequired,
-  textColor: PropTypes.string.isRequired,
+  bgColor: PropTypes.string,
+  textColor: PropTypes.string,
 };
 
 export default Header;
