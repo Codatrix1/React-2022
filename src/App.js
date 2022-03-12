@@ -1,13 +1,14 @@
 import React from "react";
 
+// components
+import Header from "./components/Header";
+import FeedbackList from "./components/FeedbackList";
+
 // Global state
 import { useState } from "react";
 import FeedbackData from "./data/FeedbackData";
 
-// components
-import Header from "./components/Header";
-import FeedbackItem from "./components/FeedbackItem";
-
+// Main React Component
 const App = function () {
   const [feedback, setFeedback] = useState(FeedbackData);
 
@@ -15,7 +16,7 @@ const App = function () {
     <React.Fragment>
       <Header />
       <div className="container">
-        <FeedbackItem />
+        <FeedbackList feedback={feedback} />
       </div>
     </React.Fragment>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// React Component
 const Header = ({ text, bgColor, textColor }) => {
   const headerStyles = {
     backgroundColor: bgColor,
