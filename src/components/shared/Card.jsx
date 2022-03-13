@@ -4,19 +4,19 @@ import PropTypes from "prop-types";
 // React component
 const Card = ({ children, reverse }) => {
   // Conditional class: coming from CSS
-  //   return <div className={`card ${reverse && "reverse"}`}>{children}</div>;
+  return <div className={`card ${reverse && "reverse"}`}>{children}</div>;
 
-  const conditionalStyles = {
-    backgroundColor: reverse ? "rgba(0,0,0,0.4)" : "#fff",
-    color: reverse ? "#fff" : "#000",
-  };
+  // const conditionalStyles = {
+  //   backgroundColor: reverse ? "rgba(0,0,0,0.4)" : "#fff",
+  //   color: reverse ? "#fff" : "#333",
+  // };
 
-  // Conditional style based on class
-  return (
-    <div className="card" style={conditionalStyles}>
-      {children}
-    </div>
-  );
+  // // Conditional style based on class
+  // return (
+  //   <div className="card" style={conditionalStyles}>
+  //     {children}
+  //   </div>
+  // );
 };
 
 // prop types
@@ -27,7 +27,7 @@ Card.propTypes = {
 
 // default props
 Card.defaultProps = {
-  reverse: true,
+  reverse: false,
 };
 
 export default Card;
