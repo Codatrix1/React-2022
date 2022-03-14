@@ -3,6 +3,7 @@ import React from "react";
 // components
 import Header from "./components/Header";
 import FeedbackList from "./components/FeedbackList";
+import FeedbackStats from "./components/FeedbackStats";
 
 // Global state
 import { useState } from "react";
@@ -23,6 +24,7 @@ const App = function () {
     <React.Fragment>
       <Header />
       <div className="container">
+        <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
     </React.Fragment>

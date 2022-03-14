@@ -11,7 +11,7 @@ const Card = ({ children, reverse }) => {
   //   color: reverse ? "#fff" : "#333",
   // };
 
-  // // Conditional style based on class
+  // // Conditional style
   // return (
   //   <div className="card" style={conditionalStyles}>
   //     {children}
