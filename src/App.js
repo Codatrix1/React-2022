@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 // components
 import Header from "./components/Header";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
+import FeedbackForm from "./components/FeedbackForm";
 
-// Global state
-import { useState } from "react";
+// import data
 import FeedbackData from "./data/FeedbackData";
 
 // Main React Component
 const App = function () {
+  // Global/App Level state
   const [feedback, setFeedback] = useState(FeedbackData);
 
   // delete a feedback
@@ -24,6 +25,7 @@ const App = function () {
     <React.Fragment>
       <Header />
       <div className="container">
+        <FeedbackForm />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
